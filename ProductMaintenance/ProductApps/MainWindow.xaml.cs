@@ -36,6 +36,8 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 decimal totalWithCharge = cProduct.TotalPayment + 25.00m;
                 totalChargeTextBox.Text = totalWithCharge.ToString("F2");
+                decimal totalWithWrapping = totalWithCharge + 5.00m;
+                addWrappingTextBox.Text = totalWithWrapping.ToString("F2");
             }
             catch (FormatException)
             {

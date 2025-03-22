@@ -38,6 +38,8 @@ namespace ProductApps
                 totalChargeTextBox.Text = totalWithCharge.ToString("F2");
                 decimal totalWithWrapping = totalWithCharge + 5.00m;
                 addWrappingTextBox.Text = totalWithWrapping.ToString("F2");
+                decimal totalWithGST = totalWithWrapping * 1.1m;
+                totalWithGSTTextBox.Text = totalWithGST.ToString("F2");
             }
             catch (FormatException)
             {
